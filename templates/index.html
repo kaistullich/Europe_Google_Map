@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Europe Map</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Google Map CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/maps.css') }}">
+
+    <!-- Europe Flag Title Icon -->
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/flag.png') }}">
+
+</head>
+<body>
+
+    <!-- Google Map -->
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAobm6dBFn5DIsxxlaaMoDSUKYpsA0yBHA&callback=initMap"
+    async defer></script>
+
+    <!-- Map file containing all JS -->
+    <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+</body>
+</html>
