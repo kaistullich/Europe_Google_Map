@@ -1,6 +1,11 @@
 /**
  * Created by kaistullich on 2/13/17.
  */
+// TODO create class (constructor) EuropeMarkers
+function EuropeMarkers(){
+
+}
+
 var map;
 var europe = {lat: 51.1657, lng: 10.4515};
 var berlin = {lat: 52.5200, lng: 13.4050};
