@@ -1,5 +1,3 @@
-# Google API Key: AIzaSyAobm6dBFn5DIsxxlaaMoDSUKYpsA0yBHA
-
 from flask import Flask, render_template
 
 app = Flask(__name__)
