@@ -47,6 +47,7 @@ function initMap() {
 
 
     // Start Prague
+
     var prague_marker = new google.maps.Marker({
         position: {lat: prague.lat, lng: prague.lng},
         map: map
