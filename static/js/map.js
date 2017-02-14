@@ -8,7 +8,7 @@ var prague = new EuropeMarkers(50.0755, 14.4378);
 var munich = new EuropeMarkers(48.1351, 11.5820);
 var villach = new EuropeMarkers(46.6086, 13.8506);
 var venice = new EuropeMarkers(45.4408, 12.3155);
-var lake_garda = new EuropeMarkers(45.6049, 10.6351);
+var lakeGarda = new EuropeMarkers(45.6049, 10.6351);
 
 var map;
 var europe = {lat: 51.1657, lng: 10.4515};
@@ -23,7 +23,7 @@ function initMap() {
 
 
     // Start Berlin
-    var berlin_marker = new google.maps.Marker({
+    var berlinMarker = new google.maps.Marker({
         position: {lat: berlin.lat, lng: berlin.lng},
         map: map
     });
@@ -37,8 +37,8 @@ function initMap() {
         content: berlinContent
     });
 
-    berlin_marker.addListener('click', function() {
-        berlin_infowindow.open(map, berlin_marker);
+    berlinMarker.addListener('click', function() {
+        berlin_infowindow.open(map, berlinMarker);
     });
     // END Berlin
 
@@ -48,7 +48,7 @@ function initMap() {
 
     // Start Prague
 
-    var prague_marker = new google.maps.Marker({
+    var pragueMarker = new google.maps.Marker({
         position: {lat: prague.lat, lng: prague.lng},
         map: map
     });
@@ -62,8 +62,8 @@ function initMap() {
         content: pragueContent
     });
 
-    prague_marker.addListener('click', function() {
-        prague_infowindow.open(map, prague_marker);
+    pragueMarker.addListener('click', function() {
+        prague_infowindow.open(map, pragueMarker);
     });
     // END Prague
 
@@ -72,7 +72,7 @@ function initMap() {
 
 
     // Start Munich
-    var munich_marker = new google.maps.Marker({
+    var munichMarker = new google.maps.Marker({
         position: {lat: munich.lat, lng: munich.lng},
         map: map
     });
@@ -86,8 +86,8 @@ function initMap() {
         content: munichContent
     });
 
-    munich_marker.addListener('click', function() {
-        munich_infowindow.open(map, munich_marker);
+    munichMarker.addListener('click', function() {
+        munich_infowindow.open(map, munichMarker);
     });
     // END Munich
 
@@ -96,7 +96,7 @@ function initMap() {
 
 
     // Start Villach
-    var villach_marker = new google.maps.Marker({
+    var villachMarker = new google.maps.Marker({
         position: {lat: villach.lat, lng: villach.lng},
         map: map
     });
@@ -110,8 +110,8 @@ function initMap() {
         content: villachContent
     });
 
-    villach_marker.addListener('click', function() {
-        villach_infowindow.open(map, villach_marker);
+    villachMarker.addListener('click', function() {
+        villach_infowindow.open(map, villachMarker);
     });
     // END Villach
 
@@ -120,7 +120,7 @@ function initMap() {
 
 
     // Start Venice
-    var venice_marker = new google.maps.Marker({
+    var veniceMarker = new google.maps.Marker({
         position: {lat: venice.lat, lng: venice.lng},
         map: map
     });
@@ -133,8 +133,8 @@ function initMap() {
         content: veniceContent
     });
 
-    venice_marker.addListener('click', function() {
-        venice_infowindow.open(map, venice_marker);
+    veniceMarker.addListener('click', function() {
+        venice_infowindow.open(map, veniceMarker);
     });
     // END Venice
 
@@ -142,8 +142,8 @@ function initMap() {
 
 
     // Start Garda Lake
-    var gardaLake_marker = new google.maps.Marker({
-        position: {lat: lake_garda.lat, lng: lake_garda.lng},
+    var gardaLakeMarker = new google.maps.Marker({
+        position: {lat: lakeGarda.lat, lng: lakeGarda.lng},
         map: map
     });
     var gardaContent = '<div id="content">'+
@@ -155,8 +155,8 @@ function initMap() {
         content: gardaContent
     });
 
-    gardaLake_marker.addListener('click', function() {
-        garda_infowindow.open(map, gardaLake_marker);
+    gardaLakeMarker.addListener('click', function() {
+        garda_infowindow.open(map, gardaLakeMarker);
     });
     // END Garda Lake
 }
