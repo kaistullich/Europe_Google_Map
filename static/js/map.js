@@ -1,6 +1,3 @@
-/**
- * Created by kaistullich on 2/13/17.
- */
 // TODO finish class (constructor) EuropeMarkers
 function EuropeMarkers(lat, lng){
     this.lat = lat;
